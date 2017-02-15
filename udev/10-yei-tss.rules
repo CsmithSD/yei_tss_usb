@@ -1,0 +1,1 @@
+SUBSYSTEMS=="usb", KERNEL=="ttyACM[0-9]*", ACTION=="add", ATTRS{idVendor}=="2476", ATTRS{idProduct}=="1010", MODE="666", SYMLINK+="sensors/imu", GROUP="dialout"

@@ -1,0 +1,26 @@
+
+<package>
+	<packageName>yei_tss_usb</packageName>
+	<Node>
+		<nodeName>yei_tss_usb</nodeName>
+		<nodeFunction>ROS driver for the yei imu device</nodeFunction>
+		<version>2.1.6</version>
+		<parameters>
+			<paramName>_port</paramName>
+			<paramType>/dev/sensors/imu</paramType>
+		</parameters>
+		<Pubtopics>
+			<pubName>/imu/data</pubName>
+			<pubType>sensor_msgs::IMU</pubType>
+			<pubName>/imu/mag</pubName>
+			<pubType>sensor_msgs::MagneticField</pubType>
+			<pubName>/imu/temp</pubName>
+			<pubType>sensor_msgs::Temperature</pubType>
+		</Pubtopics>
+		<Subtopics>
+			<subName>chatter</subName>
+			<subType>string</subType>
+		</Subtopics>
+		<dependancies>roscore</dependancies>
+	</Node>
+</package>
